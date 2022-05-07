@@ -1,0 +1,31 @@
+//Elaborar   un   algoritmo   que genere   aleatoriamenteun   arreglo 
+//unidimensional de (n) elementos enteroscomprendidos entre 
+//10y 70y luego calcule e imprima:
+//a.El número de valores múltiplos de 7.
+//b.Cantidad de valores cuyas dos cifras suman 15.
+//c.Cantidad de valores terminados en 0.
+//d.Cantidad de números que inician con 4.
+//e.El promedio del segundo y penúltimo elementosdel vector
+//Nota:  Validar  que  el  valor  leído  de  (n)  esté  entre
+//3y 20.  El  vector generado se debe imprimir horizontalmente.
+
+
+Proceso sin_titulo
+	Definir num, i, n, a, mul Como Entero;
+	Escribir "número del vector";
+	Leer n;
+	Dimension num(70);
+	
+	para i <- 1 Hasta n Hacer
+		num(i) <- azar(100);
+	FinPara
+	
+	Para a <- 1 hasta n Hacer
+		si a mod 7 == 0 Entonces
+			Escribir (a);
+		FinSi
+	
+	FinPara
+	
+	
+FinProceso
